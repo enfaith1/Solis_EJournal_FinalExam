@@ -460,6 +460,10 @@ ol {
   background: var(--bg);
 }
 
+.section--alt .objectives-list__item {
+  color: var(--ink);
+}
+
 .objectives-list__num {
   font-family: var(--font-mono);
   font-weight: 600;
@@ -598,6 +602,7 @@ ol {
 
 .media-placeholder {
   aspect-ratio: 4 / 3;
+  min-height: 180px;
   border: var(--border);
   border-style: dashed;
   background: repeating-linear-gradient(
@@ -652,6 +657,17 @@ ol {
   font-weight: 600;
   letter-spacing: 0.1em;
   opacity: 0.5;
+}
+
+/* ---- Gallery Image (future-proof for real images) ---- */
+
+.gallery-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+  display: block;
 }
 
 .video-placeholder {
@@ -741,6 +757,12 @@ ol {
 }
 
 /* ---- Responsive ---- */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid--media {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-width: 768px) {
   .nav__toggle {
