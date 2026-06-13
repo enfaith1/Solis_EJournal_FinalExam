@@ -464,6 +464,10 @@ ol {
   color: var(--ink);
 }
 
+.section--alt .objectives-list__item p {
+  color: var(--ink);
+}
+
 .objectives-list__num {
   font-family: var(--font-mono);
   font-weight: 600;
