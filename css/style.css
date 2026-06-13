@@ -402,10 +402,12 @@ ol {
   margin-top: 0.25rem;
 }
 
-.speaker-card__role {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  opacity: 0.85;
+.speakers-subtitle {
+  margin-top: 2rem;
+}
+
+.section--alt .speakers-subtitle {
+  border-left-color: var(--lime);
 }
 
 /* ---- Quote Block ---- */
